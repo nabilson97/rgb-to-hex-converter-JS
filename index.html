@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <input type="range"  value="0" min="0" max="255" onchange="document.getElementById('redvalue').value=this.value, convert()"/><br />
+  Red: <input type="text" id="redvalue" value="0" readonly/><br><br />
+  
+  <input type="range" value="0" min="0" max="255"onchange="document.getElementById('greenvalue').value=this.value, convert()"/><br />
+  Green: <input type="text"  id="greenvalue" value="0" readonly/><br><br />
+  
+  <input type="range"  value="0" min="0" max="255" onchange="document.getElementById('bluevalue').value=this.value, convert()"/><br />
+  Blue: <input type="text" id="bluevalue" value="0" readonly/><br><br />
+  <input type="text" name="" id="hexvalue" value="#000000" readonly />
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
